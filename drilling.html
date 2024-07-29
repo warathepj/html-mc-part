@@ -1,0 +1,163 @@
+<!-- drilling.html -->
+<!-- add table border in drilling.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link href='./style.css' rel='stylesheet'>
+
+</head>
+<body>
+  <nav class="navigation">
+    <div class="brand">
+
+      <img src="./public/sprocket.svg" alt="" class="logo">
+      <h1 style="color: var(--red);">Mechify</h1>
+    </div>
+    
+    <ul class="ul">
+      <li><a href="#">Home</a></li>
+      <li><a href="product-catalog.html">Product Catalog</a></li>
+      <li><a href="#">Applications</a></li>
+      <li><a href="#">Custom Parts</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>Drilling</h1>
+  <p>Aluminium thickness 3mm</p>
+    <table>
+  <thead>
+    <tr>
+      <th>Hole Size (mm)</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>2</td> 
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+  <p>Aluminium thickness 5mm</p>
+    <table>
+  <thead>
+    <tr>
+      <th>Hole Size (mm)</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>3</td> 
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+
+  <p>Steel thickness 3mm</p>
+    <table>
+  <thead>
+    <tr>
+      <th>Hole Size (mm)</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>3</td> 
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+
+  <p>Steel thickness 5mm</p>
+    <table>
+  <thead>
+    <tr>
+      <th>Hole Size (mm)</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>5</td> 
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+  <style>
+    * {
+      border: 1px solid yellow;
+
+    }
+.navigation { /* Assuming these elements are within a nav element */
+  display: flex;
+  flex-direction: row; /* Align items vertically */
+  align-items: center; /* Center horizontally */
+}
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo {
+      width: 50px;
+      height: auto;
+    }
+    body {
+            /* background-color: var(--black); */
+            background-color: #01070e;
+            color: #f6f5f8;
+        }
+  table {
+    border-collapse: collapse; /* Optional: To remove the double border */
+    width: 100%;
+  }
+
+  th, td {
+    border: 2px solid #f6f5f8;
+    padding: 8px;
+    text-align: left;
+  }
+</style>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid Example</title>
+  <link href='./style.css' rel='stylesheet'>
+</head>
+
+<body>
+      
+          <nav class="navigation">
+            <div class="brand">
+
+              <img src="./public/sprocket.svg" alt="" class="logo">
+              <h1 style="color: var(--red);">Mechify</h1>
+            </div>
+            
+            <ul class="ul">
+              <li><a href="#">Home</a></li>
+              <li><a href="product-catalog.html">Product Catalog</a></li>
+              <li><a href="#">Applications</a></li>
+              <li><a href="#">Custom Parts</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+  <div class="container-top">
+
+    <div class="container-a">
+        
+      <h2>Where precision meets performance</h2>
+      <h4>Find the perfect parts to optimize your machines.</h4>
+      <button onclick="window.location.href='/build-part.html'">Build a part</button>
+
+    </div>
+    <div class="container-b">
+      <img
+        src="https://images.unsplash.com/photo-1538390416079-c89a38c8db42?q=80&w=1475&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="gear" class="img-1">
+    </div>
+  </div>
+
+  <div class="container-bottom">
+    <div class="container-c">
+      <div class="container-c-1">
+
+        <img
+          src="https://images.unsplash.com/photo-1609348632802-b952f368fc3a?q=80&w=450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+          class="img-2"
+        >
+      </div>
+      <div class="container-c-2">
+        <h3>Downtime Destroyer</h3>
+        <p>Speeding Up Your Machine Repairs</p>
+      </div>
+    </div>
+    <div class="container-d">
+      <li><a href="test-img.html">test img</a></li>
+
+    </div>
+  </div>
+
+  <footer>
+  <ul class="footer-links" style="gap: 7px; margin-bottom: 6px;">
+
+    <li><a href="terms.html">Terms of Service</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+  </ul>
+  <p>&copy; 2024 Mechify. All rights reserved.</p>
+
+</footer>
+
+  <style>
+    * {
+      border: 1px solid yellow;
+
+    }
+.navigation { /* Assuming these elements are within a nav element */
+  display: flex;
+  flex-direction: row; /* Align items vertically */
+  align-items: center; /* Center horizontally */
+}
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+    
+    .container-top {
+      display: flex;
+      flex-direction: row;
+    }
+    .logo {
+      width: 50px;
+      height: auto;
+    }
+    .container-a {
+      width: 60%;
+      background-color: var(--black);
+      color: var(--white);
+    }
+    button:hover {
+    background: var(--soft-red);
+  }
+    .container-b {
+      width: 40%;
+      background-color: var(--black);
+
+    }
+
+    .container-bottom {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .container-c {
+      width: 60%;
+
+      display: flex;
+      flex-direction: row;
+
+    }
+
+    .container-c-1 {
+      width: 50%;
+      background-color: var(--white);
+    }
+
+    .container-c-2 {
+      width: 50%;
+      background-color: var(--white);
+      color: var(--black);
+    }
+
+    .container-d {
+      width: 40%;
+      background-color: var(--black);
+      color: var(--white);
+    }
+
+    .img-1 {
+      width: 100%;
+    }
+
+    .img-2 {
+      width: 100%;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      /* Distribute space around items */
+      align-items: center;
+      /* Vertically center items */
+      gap: 10px;
+    }
+    footer {
+      position: absolute; 
+      bottom: 0; 
+      left: 50%;
+      transform: translateX(-50%); 
+      width: 100%;
+      text-align: center;
+    }
+    
+    .footer-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    /* header { */
+    /* margin-top: 590px; */
+    /* background-color: #c09999; */
+
+    /* } */
+  </style>
+</body>
+
+</html>

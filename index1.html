@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid Example</title>
+  <link href='./style.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="container-top">
+    <div class="container-a">
+      <header>
+        <div class="nav">
+    
+          <h1>Mechify</h1>
+          <nav>
+            <ul class="ul">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Product Catalog</a></li>
+              <li><a href="#">Applications</a></li>
+              <li><a href="#">Custom Parts</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <h2>Where precision meets performance</h2>
+      <h4>Find the perfect parts to optimize your machines.</h4>
+    </div>
+    <div class="container-b">
+      <img src="https://images.unsplash.com/photo-1538390416079-c89a38c8db42?q=80&w=1475&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+  </div>
+  <style>
+    :root {
+  --black: #01070e;
+  --white: #f6f5f8;
+  --font-family: 'Arial', sans-serif;
+}
+
+    * {
+  margin: 0;
+  padding: 0;
+  
+box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* body {
+  margin-top: -70px;
+} */
+
+/* Additional resets for specific elements (optional) */
+ul, ol {
+  list-style: none; /* Remove default list styling */
+}
+
+a {
+  text-decoration: none; /* Remove default link underlines */
+  color: inherit; /* Inherit color from parent */
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer; /* Ensure button has a cursor on hover */
+}
+
+.container-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-a {
+  background-color: var(--black);
+  color: var(--white);
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Distribute space around items */
+  align-items: center; /* Vertically center items */
+  gap: 10px;
+}
+.ul {
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Distribute space around items */
+  align-items: center; /* Vertically center items */
+  gap: 10px; /* Add 10px spacing between items */
+}
+
+/* header { */
+  /* margin-top: 590px; */
+  /* background-color: #c09999; */
+
+/* } */
+
+  </style>
+</body>
+</html>
