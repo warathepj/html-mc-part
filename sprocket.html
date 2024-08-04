@@ -1,4 +1,3 @@
-<!-- build-part.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='./style.css' rel='stylesheet'>
+
   <title>Document</title>
 </head>
 
@@ -18,7 +18,7 @@
     </div>
 
     <ul class="ul">
-      <li><a href="#">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="product-catalog.html">Product Catalog</a></li>
       <li><a href="#">Applications</a></li>
       <li><a href="#">Custom Parts</a></li>
@@ -26,25 +26,57 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
-<!--in build-part.html -->
-  <div class="content">
-    
-      <!-- is parent and <div class="modal"> is child-->
-        <!-- how to set css absolute, relative -->
-    <h1 style="text-align: center; margin-bottom: 40px;">Build Part
-    </h1>
-    <h2 style="text-align: center; margin-bottom: 10px;">Upload a part file</h2>
-        <img 
-      class="upload" src="./public/upLoad.svg" alt="" 
-      style="display: block; margin-left: auto; margin-right: auto; cursor: pointer;" 
-      onclick="document.querySelector('.modal').style.display = 'block'">
+  <!-- https://www.mcmaster.com/products/sprockets/sprockets~/sprockets-for-ansi-roller-chain-9/ -->
+  <h1>Sprockets for ANSI Roller Chain</h1>
+  <h3>For ANSI 25 Roller Chain (1/4" Pitch)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Number
+          of Teeth</th>
+        <th>For Shaft
+          Dia. (inch)</th>
+        <th>OD (inch)</th>
+        <th>	Overall
+          Wd. (inch)</th>
+        <th>Hub Dia (inch)</th>
+        <th>Material</th>
+        <th>Price ($)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9</td>
+        <td>1/4</td>
+        <td>0.84</td>
+        <td>1/2</td>
+        <td>7/16</td>
+        <td>steel</td>
+        <td>13.42</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>1/4</td>
+        <td>0.92</td>
+        <td>1/2</td>
+        <td>1/2</td>
+        <td>steel</td>
+        <td>13.71</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>1/4</td>
+        <td>1</td>
+        <td>1/2</td>
+        <td>9/16</td>
+        <td>steel</td>
+        <td>14.04</td>
+      </tr>
+      
+    </tbody>
+  </table>
 
-    <div class="modal">
-      <h1>Uploaded!!!!</h1>
-    </div>
-  </div>
-
-
+  
   <style>
     * {
       border: 1px solid yellow;
@@ -70,23 +102,6 @@
       width: 50px;
       height: auto;
     }
-    .content {
-  position: relative; /* Make 'content' a positioned parent */
-}
-    .upload {
-      width: 200px;
-      height: 200px;
-    }
-        .modal {
-      position: absolute;
-      top: 50px;
-      left: 150px;
-      width: 700px;
-      height: 600px;
-      background-color: #c09999;
-      display: none; /* added */
-    }
-
   </style>
 </body>
 

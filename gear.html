@@ -1,74 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='./style.css' rel='stylesheet'>
 
-    <title>Document</title>
+  <title>Document</title>
 </head>
+
 <body>
-    <nav class="navigation">
-        <div class="brand">
+  <nav class="navigation">
+    <div class="brand">
 
-          <img src="./public/sprocket.svg" alt="" class="logo">
-          <h1 style="color: var(--red);">Mechify</h1>
-        </div>
-        
-        <ul class="ul">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="product-catalog.html">Product Catalog</a></li>
-          <li><a href="#">Applications</a></li>
-          <li><a href="#">Custom Parts</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+      <img src="./public/sprocket.svg" alt="" class="logo">
+      <h1 style="color: var(--red);">Mechify</h1>
+    </div>
 
-      <h1>Drilling</h1>
-  <p>Aluminium thickness 3mm</p>
-    <table>
-  <thead>
-    <tr>
-      <th>Hole Size (mm)</th>
-      <th>Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>3</td>
-      <td>2</td> 
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>5</td>
-    </tr>
-  </tbody>
-</table>
-      <style>
-        * {
+    <ul class="ul">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product-catalog.html">Product Catalog</a></li>
+      <li><a href="#">Applications</a></li>
+      <li><a href="#">Custom Parts</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>Spur Gear</h1>
+  <p>Steel</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Teeth</th>
+        <th>Module</th>
+        <th>Bore Diam (mm)</th>
+        <th>Pitch (mm)</th>
+        <th>Hub (mm)</th>
+        <th>Price ($)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>12</td>
+        <td>1</td>
+        <td>6</td>
+        <td>12</td>
+        <td>14</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>----</td>
+        <td>----</td>
+      </tr>
+      <tr>
+        <td>----</td>
+        <td>----</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Stainless Steel</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Teeth</th>
+        <th>Module</th>
+        <th>Bore Diam (mm)</th>
+        <th>Pitch (mm)</th>
+        <th>Hub (mm)</th>
+        <th>Price ($)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>100</td>
+        <td>1</td>
+        <td>12</td>
+        <td>100</td>
+        <td>60</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>----</td>
+        <td>----</td>
+      </tr>
+      <tr>
+        <td>----</td>
+        <td>----</td>
+      </tr>
+    </tbody>
+  </table>
+  <style>
+    * {
       border: 1px solid yellow;
 
     }
-.navigation { /* Assuming these elements are within a nav element */
-  display: flex;
-  flex-direction: row; /* Align items vertically */
-  align-items: center; /* Center horizontally */
-}
-.brand {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 
-.logo {
+    .navigation {
+      /* Assuming these elements are within a nav element */
+      display: flex;
+      flex-direction: row;
+      /* Align items vertically */
+      align-items: center;
+      /* Center horizontally */
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .logo {
       width: 50px;
       height: auto;
     }
-      </style>
+  </style>
 </body>
+
 </html>

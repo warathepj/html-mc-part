@@ -1,11 +1,14 @@
+<!-- index.html -->
+<!-- Suggested code may be subject to a license. Learn more: ~LicenseLog:3725079224. -->
+<!-- in index.html how to limit the height of container-top, and container-bottom?-->
 <!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grid Example</title>
   <link href='./style.css' rel='stylesheet'>
+  <title>Grid Example</title>
 </head>
 
 <body>
@@ -32,7 +35,10 @@
         
       <h2>Where precision meets performance</h2>
       <h4>Find the perfect parts to optimize your machines.</h4>
-      <button onclick="window.location.href='/build-part.html'">Build a part</button>
+      <button 
+        onclick="window.location.href='/build-part.html'"
+        id="btn"  
+      >Build a part</button>
 
     </div>
     <div class="container-b">
@@ -69,9 +75,13 @@
     <li><a href="terms.html">Terms of Service</a></li>
     <li><a href="privacy.html">Privacy Policy</a></li>
   </ul>
-  <p>&copy; 2024 Mechify. All rights reserved.</p>
+  <p>Copyright &copy; <span id="year"></span> Mechify. All rights reserved.</p>
 
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
   <style>
     * {
@@ -88,19 +98,26 @@
   flex-direction: row;
   align-items: center;
 }
-    
-    .container-top {
-      display: flex;
-      flex-direction: row;
-    }
-    .logo {
+.logo {
       width: 50px;
       height: auto;
     }
+    
+    .container-top {
+      height: 200px;
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+    }
+    
     .container-a {
       width: 60%;
+      padding: 20px;
       background-color: var(--black);
       color: var(--white);
+    }
+    #btn {
+      margin-top: 40px;
     }
     button:hover {
     background: var(--soft-red);
@@ -112,8 +129,12 @@
     }
 
     .container-bottom {
+      height: 200px;
+
+
       display: flex;
       flex-direction: row;
+      overflow: hidden;
     }
 
     .container-c {
@@ -131,6 +152,8 @@
 
     .container-c-2 {
       width: 50%;
+      padding: 15px;
+
       background-color: var(--white);
       color: var(--black);
     }
